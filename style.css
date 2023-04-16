@@ -1,0 +1,119 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+
+body {
+    background-color: whitesmoke;
+}
+
+main {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+} 
+label{
+    font-size: 15px;
+}
+
+textarea{
+    border: 1px solid darkblue;
+    border-radius: 15px;
+}
+
+textarea{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.input-texto {
+    margin-top: 90px;
+}
+
+#mensajeSalida  {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 90px;
+    background-image: url("imagenes/muñeco.png");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    
+}
+
+.boton{
+    background-color: rgba(245, 245, 245, 0.827);
+    border: 1px solid darkblue; 
+    color: black; 
+    padding: 12px 24px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.boton:hover{
+    transform: scale(1.1);
+    background-color: darkblue;
+    color: whitesmoke;
+}
+
+#encriptar{
+    background-color: darkblue;
+    color: white;
+    margin-right: 30px;
+}
+
+#encriptar:hover{
+    background-color: rgba(245, 245, 245, 0.827);
+    color: black;
+}
+
+.informacion {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+
+    #input-text0{
+        font-size: 24px;
+        width: 30%;
+    }
+    .grupo {
+        text-align: center;
+      }
+  
+    .botones {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .boton {
+      margin: 8px 0;
+      
+    }
+  
+    #mensajeSalida {
+      margin-left: 0;
+      background-position: center;
+      background-size: contain;
+    }
+  }
